@@ -1,0 +1,111 @@
+<!-- Day 31 Intro to html -- make a webpage -->
+<!-- This is a comment, in between these two sets of symbols -->
+
+<!-- html is hypertext markup language -->
+
+<!DOCTYPE html>
+<!-- every webpage starts with the above line -->
+<!-- html includes tags
+	an <opening-tag> inside of angle bracket
+    and usually a </closing-tag> -- also has a slash after the opening bracket -->
+
+<html>
+	<head>	<!-- The head section is meta-data about your web page -->
+		<title>My First Web Page</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body bgcolor="#9cece5">	<!-- This is where the content of your web page goes -->
+		<!-- Change the background color of this page using a HEX color. Ctl-Shift-P
+		 then type 'color picker' -->
+
+		<!-- Now, let's add a large centered headline -->
+		<h1>All About Me</h1>
+
+		<!-- Let's put some text in a paragraph -->
+		<p>My name is Callie and I am an International Affairs and Modern Languages (French) major at GT. I studied abroad last semester in Metz, France. I work at a theater and I love watching and analyzing new tv shows - like The Pitt!</p>
+
+		<!-- the headline goes from h1 (largest) down to h6 (smallest). -->
+		<!-- medium headline -->
+		<h3> Picture of Me!</h3>
+
+		<!-- Add an image of yourself to your web page.  -->
+		<img src="Me.jpeg">
+		<!-- src is an attribute and its value is "buzz1.jpg"
+		 Be sure to put your image files in the same folder as index.html -->
+
+		<p>I am a part of French club as well as French honor society.<br>You might see me at the CRC often! I like working out.</p>
+		<!-- Note that <br> does NOT have a closing tag unlike most other tags -->
+
+		<!-- let's add a link to another page -->
+		<!-- the link tag is <a> and the attribute for the webpage is href -->
+
+		<p>
+		My favorite extracurricular activity is watching tv lol.<br>
+		To learn all about my favorite show go to this website: <a href="https://en.wikipedia.org/wiki/The_Pitt">The Pitt</a>. Everything you need to know is there.
+		</p>
+
+		<!-- How do I make a webpage open in a new tab?
+			use the target attribute, with the value "_blank" -->
+		<p> Open The Pitt in a <a href="https://en.wikipedia.org/wiki/The_Pitt" target="_blank">new tab</a>.</p>
+
+		<!-- Can we make an image be a weblink?
+			Yes, just put an <img> inside of the <a> tag instead of text. -->
+		<p><a href="https://www.forbes.com/sites/paultassi/2025/03/17/the-best-show-on-tv-has-to-be-the-pitt-right/"><img src="https://m.media-amazon.com/images/M/MV5BMTU3MDliMGEtMDQxNi00OTk1LTg1NWMtZDM2NmEwZDA1ZDk2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Pitt. Click for home."></a></p>
+
+		<!-- Can we link a YouTube video?
+			Yes, use Share and Embed from the video on YouTube-->
+		<p><iframe width="560" height="315" src="https://www.youtube.com/embed/ufR_08V38sQ?si=Eelyx_VROi5M_DpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+
+		<!-- Add a bullet list -->
+		<!-- this is called an unordered list, <ul>
+			and every line in the bullet list is a list item, <li> 
+		-->
+		<p>
+		My favorite characters from The Pitt:
+		</p>
+		<ul>
+			<li>Dr. Melissa King</li>
+			<li>Dr. Samira Mohan</li>
+			<li>Dr. Dennis Whitaker</li>
+		</ul>
+
+		<!-- Add a numbered list -->
+		<!-- there is called an ordered list, <ol>
+			which adds sequence numbers to each list item, <li>
+		-->
+		<ol>
+			<li>Apples</li>
+			<li>Oranges</li>
+			<li>Bananas</li>
+		</ol>
+
+		<!-- Add a 3x3 table -->
+		<!-- Tables - grids of rows and columns
+			Tags are:
+			<table>
+				<th> -- optional, a table header, used for the top row
+				<tr> -- a table row
+				<td> -- a table data (column in a row)
+		-->
+		<table>
+			<tr>
+				<th>Col1</th>
+				<th>Col2</th>
+				<th>Col3</th>
+			</tr>
+			<tr>
+				<td>r1c1</td>
+				<td>r1c2</td>
+				<td>f1c3</td>
+			</tr>
+			<tr>
+				<td>r2c1</td>
+				<td>r2c2</td>
+				<td>f2c3</td>
+			</tr>
+
+		</table>
+
+	</body>
+</html>
+

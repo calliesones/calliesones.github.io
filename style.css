@@ -1,0 +1,19 @@
+img {
+    width:25%;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: optional;
+    font-size: larger;
+}
+
+li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: optional;
+    font-size: larger;
+}
+
+h3 {
+    font-size: x-large;  
+}
